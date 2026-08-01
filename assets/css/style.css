@@ -1275,88 +1275,115 @@ height:42px;
     font-weight: 500;
     color: #ffffff;
     }
-    /* ==================================
+   
+/* ==================================
 MOBILE HOME PAGE CORRECTIONS
 ================================== */
 
 @media (max-width: 768px) {
 
-
-    /* Prevent the fixed header from covering page content */
-    body {
-        padding-top: 82px;
-    }
-    
-    /* Make the mobile header more compact */
+    /* Header */
     .navbar {
         min-height: 82px;
         padding: 10px 15px;
     }
-    
-    /* Keep the logo and website name properly aligned */
+
     .navbar-brand {
         font-size: 1.7rem;
         display: flex;
         align-items: center;
         gap: 10px;
     }
-    
+
     .navbar-brand img {
         width: 48px;
         height: 48px;
         object-fit: contain;
     }
-    
-    /* Add space above the hero content */
-    .hero,
-    .hero-section {
-        padding-top: 55px !important;
+
+    /* Hero section */
+    .hero {
+        padding: 45px 16px 45px !important;
     }
-    
-    /* Keep the top service-area text below the header */
-    .hero-top,
-    .hero-badge,
-    .service-area {
-        position: relative;
-        z-index: 2;
+
+    /* Hero badge */
+    .hero-badge {
+        display: inline-block;
+        margin-bottom: 20px;
+        font-size: 0.95rem;
     }
-    
-    /* Improve hero heading size */
-    .hero h1,
-    .hero-title {
-        font-size: 2.25rem !important;
+
+    /* Main heading */
+    .hero h1 {
+        font-size: 2.3rem !important;
         line-height: 1.15;
-        margin-top: 20px;
+        margin-bottom: 24px;
     }
-    
-    /* Improve paragraph readability */
-    .hero p,
-    .hero-description {
+
+    /* Hero description */
+    .hero p {
         font-size: 1.05rem;
         line-height: 1.65;
+        margin-bottom: 28px;
     }
-    
-    /* Keep Call and WhatsApp buttons properly sized */
-    .hero .btn,
+
+    /* Call and WhatsApp buttons */
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
     .hero-buttons .btn {
         width: 100%;
-        min-height: 64px;
+        min-height: 68px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         font-size: 1.25rem;
     }
-    
-    /* Prevent the doctor photo from becoming excessively tall */
-    .doctor-photo,
-    .hero-doctor img {
-        width: 100%;
-        max-width: 330px;
-        height: auto;
-        max-height: 430px;
-        object-fit: contain;
-        display: block;
-        margin: 20px auto 0;
+
+    /* Information cards */
+    .hero-info {
+        margin-top: 42px !important;
     }
-    
-    /* Keep floating contact buttons above the page content */
+
+    .info-card {
+        min-height: 72px;
+        padding: 18px;
+        margin-bottom: 18px;
+    }
+
+    /* Doctor section */
+    .doctor-card {
+        margin-top: 25px;
+        overflow: hidden;
+    }
+
+    .doctor-image {
+        display: block;
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        max-height: 420px;
+        object-fit: contain;
+        margin: 0 auto;
+    }
+
+    /* Doctor information */
+    .doctor-details {
+        padding: 18px 12px;
+    }
+
+    .doctor-details h3 {
+        font-size: 1.3rem;
+    }
+
+    .doctor-details p {
+        font-size: 1rem;
+    }
+
+    /* Floating WhatsApp and Call buttons */
     .floating-buttons,
     .floating-contact {
         right: 16px;
@@ -1364,3 +1391,4 @@ MOBILE HOME PAGE CORRECTIONS
         z-index: 9999;
     }
 }
+
